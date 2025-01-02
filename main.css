@@ -1,0 +1,762 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #19388A;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.one {
+    height: 20vh;
+    width: 100%;
+    background-color: #19388A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+}
+
+.two {
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.three {
+    height: 10vh;
+    width: 100%;
+}
+
+.header {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* Adjust layout */
+    align-items: center;
+    border: 1px solid #19388A;
+}
+
+.purse,
+.rating {
+    height: 100%;
+    width: 40%;
+    background-color: #19388A;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    align-items: center;
+    border: 1px solid #19388A;
+}
+
+.rating {
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+.create {
+    height: 100%;
+    width: 20%;
+    border: 1px solid transparent;
+    background-color: #19388A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.highest-stats {
+    width: 70%;
+    height: 50%;
+    color: white;
+    background-color: #4F91CD;
+    border-radius: 5px;
+    font-size: 110%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+}
+
+.teambox {
+    height: 95%;
+    width: 90%;
+    overflow-y: hidden;
+    overflow-x: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: scroll;
+    border: 1px solid transparent;
+
+}
+
+#inner2 {
+    height: 98%;
+    display: flex;
+    gap: 35px;
+    border: 2px solid transparent;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+.team::-webkit-scrollbar {
+    display: none;
+}
+
+.team-info {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.foottext {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+table tr td {
+    white-space: nowrap;
+    overflow-x: scroll;
+    max-width: 85px;
+}
+
+table tr td::-webkit-scrollbar {
+    display: none;
+}
+
+td {
+    overflow: visible;
+    white-space: nowrap;
+
+}
+
+tr.dragging {
+    background-color: #f0f0f0;
+}
+
+
+
+
+footer {
+    background-color: #19388A;
+    color: white;
+    width: 100%;
+}
+
+.team {
+    width: 345px;
+    display: flex;
+    min-height: 385px;
+    max-height: 385px;
+    flex-direction: column;
+    gap: 0px;
+    padding: 0px 15px;
+}
+
+
+.team:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.team .teamone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+}
+
+.team .teamlogo {
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+}
+
+.team .teamlogo img {
+    width: 135px;
+    height: auto;
+    padding: 12px;
+    transition: box-shadow 0.3s, transform 0.3s;
+}
+
+
+#mi .teamlogo img:hover,
+#rcb .teamlogo img:hover,
+#srh .teamlogo img:hover,
+#kkr .teamlogo img:hover,
+#csk .teamlogo img:hover,
+#rr .teamlogo img:hover,
+#dd .teamlogo img:hover {
+    transform: scale(1.01);
+}
+
+
+.team .teamdetail {
+    border: 1px solid transparent;
+    font-weight: bold;
+    text-align: left;
+    width: 60%;
+    padding-left: 10px;
+}
+
+.team .teamdetail .teamname {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    border: 1px solid transparent;
+}
+
+
+
+.team .teamdetail .teamname button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.team .teamdetail .playnum,
+.team .teamdetail .ranking {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+    align-items: center;
+    border: 1px solid transparent;
+    font-size: 0.9rem;
+}
+
+.team .teamtwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: transparent;
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.team .teamthree {
+    overflow-y: auto;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding: 10px;
+    min-height: 200px;
+    max-height: 200px;
+    margin: 10px 0px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+#csk .teamthree {
+    border: 2px solid #0056b3;
+}
+
+.team .teamthree table {
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+.team .teamthree th,
+.team .teamthree td {
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 0.9rem;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    word-wrap: break-word;
+}
+
+.team .teamthree th {
+    font-size: small;
+    padding: 8px;
+    text-transform: uppercase;
+}
+
+#csk .teamthree th {
+    background-color: #ffc107;
+    color: #0056b3;
+}
+
+.team .teamthree tr:nth-child(even) {
+    background-color: #f7f7f7;
+}
+
+.team .teamthree tr:nth-child(odd) {
+    background-color: #fff;
+}
+
+.team .teamthree td {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+#csk .teamthree td:nth-child(1) {
+    color: #0056b3;
+
+}
+
+#csk .teamthree td:nth-child(2) {
+    color: #ffc107;
+}
+
+.team .teamthree td:nth-child(3) {
+    color: black;
+}
+
+.team .teamthree td:nth-child(4) {
+    color: #f44336;
+}
+
+.team .teamthree td {
+    max-width: 150px;
+    overflow-x: scroll;
+}
+
+.team .teamthree td::-webkit-scrollbar {
+    height: 8px;
+}
+
+.team .teamthree td::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+}
+
+/* Scrollbar customization */
+.team .teamthree::-webkit-scrollbar {
+    display: none;
+}
+
+.team .teamthree td::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+
+@media (max-width: 400px) {
+    *::-webkit-scrollbar {
+        display: none;
+    }
+
+    .one {
+        height: 25vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+    }
+
+    .two {
+        height: 75vh;
+        width: 100%;
+    }
+
+    .three {
+        height: 5vh;
+        width: 100%;
+        background-color: #19388A;
+    }
+
+
+
+    .header {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid transparent;
+    }
+
+    .purse,
+    .rating {
+        height: 35%;
+        width: 100%;
+        background-color: #19388A;
+        border: 1px solid #19388A;
+        padding: 0px;
+        justify-content: center;
+    }
+
+
+    .create {
+        height: 30%;
+        width: 100%;
+        border: 1px solid transparent;
+        background-color: #19388A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .highest-stats {
+        height: 60%;
+        width: 70%;
+        border-radius: 5px;
+        font-size: 80%;
+        border: 1px solid transparent;
+    }
+
+    .teamtwo {
+        margin: 5px 0px;
+    }
+
+    .teambox {
+        width: 98%;
+    }
+
+    .team {
+        max-height: 420px;
+        min-height: 420px;
+
+    }
+
+    .team .teamthree {
+        min-height: 230px;
+        max-height: 230px;
+    }
+
+}
+
+@media (min-width:400px)and (max-width: 800px) {
+    *::-webkit-scrollbar {
+        display: none;
+    }
+
+    .one {
+        height: 25vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+
+    }
+
+    .two {
+        height: 75vh;
+        width: 100%;
+    }
+
+    .three {
+        height: 5vh;
+        width: 100%;
+        background-color: #19388A;
+    }
+
+
+
+    .header {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid transparent;
+    }
+
+    .purse,
+    .rating {
+        height: 35%;
+        width: 100%;
+        background-color: #19388A;
+        border: 1px solid #19388A;
+        padding: 0px;
+        justify-content: center;
+    }
+
+
+    .create {
+        height: 30%;
+        width: 100%;
+        border: 1px solid transparent;
+        background-color: #19388A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .highest-stats {
+        height: 60%;
+        width: 70%;
+        border-radius: 5px;
+        font-size: 80%;
+        border: 1px solid transparent;
+    }
+
+    .teamtwo {
+        margin: 5px 0px;
+    }
+
+    .teambox {
+        width: 90%;
+    }
+
+    .team {
+        max-height: 500px;
+        min-height: 500px;
+        max-width: 600px;
+    }
+
+    .team .teamthree {
+        min-height: 300px;
+        max-height: 300px;
+    }
+
+}
+
+@media (min-width: 801px) and (max-width: 1024px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    .one {
+        height: 20vh;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .two {
+        height: 80vh;
+        width: 100%;
+    }
+
+    .three {
+        height: 5vh;
+        width: 100%;
+    }
+
+    .header {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid #19388A;
+    }
+
+    .purse,
+    .rating {
+        height: 100%;
+        width: 40%;
+        background-color: #19388A;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
+        align-items: center;
+        border: 1px solid #19388A;
+    }
+
+    .rating {
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+
+    .create {
+        height: 100%;
+        width: 20%;
+        border: 1px solid transparent;
+        background-color: #19388A;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .highest-stats {
+        width: 85%;
+        height: 35%;
+        color: white;
+        background-color: #4F91CD;
+        border-radius: 5px;
+        font-size: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid transparent;
+    }
+
+    .teamone {
+        margin-top: 10px;
+    }
+
+    .teambox {
+        width: 90%;
+    }
+
+    .team {
+        max-height: 400px;
+        gap: 20px;
+        min-height: 400px;
+        min-width: 400px;
+        max-width: 400px;
+    }
+
+    .team .teamthree {
+        min-height: 160px;
+        max-height: 160px;
+    }
+
+
+
+}
+
+@media (min-width: 1025px) and (max-width:1228px) {
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    .one {
+        height: 20vh;
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .two {
+        height: 80vh;
+        width: 100%;
+
+    }
+
+    .three {
+        height: 5vh;
+        width: 100%;
+        background-color: #19388A;
+    }
+
+    .header {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .purse,
+    .rating {
+        height: 100%;
+        width: 40%;
+        background-color: #19388A;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
+        align-items: center;
+        border: 1px solid #19388A;
+    }
+
+    .rating {
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+
+    .create {
+        height: 100%;
+        width: 20%;
+        border: 1px solid transparent;
+        background-color: #19388A;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .highest-stats {
+        width: 75%;
+        height: 40%;
+        color: white;
+        background-color: #4F91CD;
+        border-radius: 5px;
+        font-size: 120%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid transparent;
+    }
+
+    .teambox {
+        width: 90%;
+    }
+
+    .team {
+        max-height: 580px;
+        gap: 20px;
+        min-height: 580px;
+        min-width: 440px;
+        max-width: 440px;
+    }
+
+    .team .teamthree {
+        min-height: 330px;
+        max-height: 330px;
+    }
+
+
+}

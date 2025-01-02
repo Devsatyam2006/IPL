@@ -1,0 +1,49 @@
+#lsg {
+    border: 2px solid #b93243;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, #1b2452 50%, #b93243 100%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #ea9e0f;
+}
+
+#lsg .teamlogo img {
+    width: 150px;
+    height: 110px;
+    filter: drop-shadow(6px 6px 2px rgba(0, 0, 0, 0.5));
+    border-radius: 0%;
+    border: 0px solid #FFCC32;
+}
+
+#lsg .teamlogo {
+    width: 45%;
+}
+
+#lsg .teamtwo {
+    background-color: transparent;
+    color: #1b2452;
+}
+
+#lsg .teamtwo button {
+    background-color: #b93243;
+    border: none;
+}
+
+#lsg .teamthree {
+    border: 2px solid #b93243;
+}
+
+
+#lsg .teamthree th {
+    background-color: #1b2452;
+    color: #fcc300;
+}
+
+#lsg .teamthree td:nth-child(1) {
+    color: #1b2452;
+
+}
+
+#lsg .teamthree td:nth-child(2) {
+    color: #fcc300;
+}

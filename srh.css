@@ -1,0 +1,45 @@
+#srh {
+    border: 2px solid #e45225;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #faaa25 40%, #e45225 70%, #d42a25 85%, #350b0b 100%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #350b0b;
+}
+
+#srh .teamlogo img {
+    width: 175px;
+    height: 110px;
+    filter: drop-shadow(4px 4px 0px rgba(0, 0, 0, 0.5));
+    border-radius: 0%;
+    border: 0px solid #FFCC32;
+}
+
+#srh .teamtwo {
+    background-color: transparent;
+    color: #FF822A;
+}
+
+#srh .teamtwo button {
+    background-color: #000000;
+    border: none;
+}
+
+
+#srh .teamthree {
+    border: 2px solid #e45225;
+}
+
+#srh .teamthree th {
+    color: #000000;
+    background-color: #FF822A;
+}
+
+#srh .teamthree td:nth-child(1) {
+    color: #000000;
+
+}
+
+#srh .teamthree td:nth-child(2) {
+    color: #FF822A;
+}

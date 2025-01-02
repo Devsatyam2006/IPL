@@ -1,0 +1,43 @@
+#mi {
+    border: 2px solid #FFCC32;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #0061a8, #004ba0, #002f6c);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #D1AB3E;
+}
+
+#mi .teamlogo img {
+    width: 140px;
+    height: 110px;
+    filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.5));
+}
+
+
+#mi .teamtwo button {
+    background-color: #FFCC32;
+    border: none;
+}
+
+#mi .teamtwo {
+    background-color: transparent;
+}
+
+
+#mi .teamthree {
+    border: 2px solid #FFCC32;
+}
+
+#mi .teamthree th {
+    background-color: #004BA0;
+    color: #FFCC32;
+}
+
+
+#mi .teamthree td:nth-child(1) {
+    color: #004BA0;
+}
+
+#mi .teamthree td:nth-child(2) {
+    color: #F79433;
+}

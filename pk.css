@@ -1,0 +1,50 @@
+#pk {
+    border: 2px solid #dcbb92;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, #dc1c2c 40%, #e43444 60%, #dc4847 100%);
+
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #dcbb92;
+}
+
+
+#pk .teamlogo img {
+    width: 90px;
+    height: 110px;
+    filter: drop-shadow(6px 6px 2px rgba(0, 0, 0, 0.5));
+    border-radius: 0%;
+    border: 0px solid #FFCC32;
+}
+
+
+#pk .teamtwo {
+    background-color: transparent;
+    color: #de1929;
+}
+
+#pk .teamtwo button {
+    background-color: #dcbb92;
+    border: none;
+}
+
+
+#pk .teamthree {
+    border: 2px solid #dcbb92;
+}
+
+
+#pk .teamthree th {
+    background-color: #dc1c2c;
+    color: #dcbb92;
+
+}
+
+
+#pk .teamthree td:nth-child(1) {
+    color: black;
+}
+
+#pk .teamthree td:nth-child(2) {
+    color: #dcbb92;
+}
