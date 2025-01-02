@@ -643,12 +643,12 @@ function createTeamFromStorage(team) {
     teamBox.id = team.name.toLowerCase(); // Set the ID for styles
     teamBox.classList.add("team");
 
-        const existingLink = document.querySelector(`link[href="./css/${team.name.toLowerCase()}.css"]`);
+        const existingLink = document.querySelector(`link[href="${team.name.toLowerCase()}.css"]`);
     if (!existingLink) {
         const link = document.createElement("link");
         link.rel = "stylesheet";
         link.type = "text/css";
-        link.href = `./css/${team.name.toLowerCase()}.css`;
+        link.href = `${team.name.toLowerCase()}.css`;
         document.head.appendChild(link);
     }
     teamBox.innerHTML = `
